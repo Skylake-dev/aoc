@@ -1,4 +1,4 @@
-file = open('./1/input')
+file = open('./input')
 elf = 0
 elves_cal = [0]
 for line in file.readlines():
