@@ -27,9 +27,6 @@ def do_n_move(stacks: list, quantity: int, start: int, dest: int) -> None:
     to_move = stacks[start][0:quantity]
     stacks[start] = stacks[start][quantity:]
     stacks[dest] = to_move + stacks[dest]
-    print(to_move)
-    print(stacks[start])
-    print(stacks[dest])
 
 def get_answer(stacks: list) -> str:
     answer = ''
