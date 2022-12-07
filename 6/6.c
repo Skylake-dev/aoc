@@ -19,14 +19,14 @@ void insert(char* marker, char element, int first_free_cell) {
     *(marker + first_free_cell) = element;
 }
 
-int shift(char* marker, char shift_until, int first_free_index) {
+int shift(char* marker, char shift_until, int first_free_cell) {
     int offset = 0;   // position of the duplicate char
     int shift_to = 0;
     while (*(marker + offset) != shift_until) {
         offset++;
     }
     offset++; // move to first character to shift
-    while(offset < first_free_index) {
+    while(offset < first_free_cell) {
         // from the next char, shift all back to the beginning
         *(marker + shift_to) = *(marker + offset);
         offset++;
@@ -36,9 +36,9 @@ int shift(char* marker, char shift_until, int first_free_index) {
 }
 
 int find_marker(char* line, int pattern_len) {
-    int marker_offset = 0;      // offset of the marker (start of marker + len(marker))
-    int first_free_cell = 0;  // where i am in the marker now
-    char curr_char;             // what is the current char
+    int marker_offset = 0;          // offset of the marker (start of marker + len(marker))
+    int first_free_cell = 0;        // where i am in the marker now
+    char curr_char;                 // what is the current char
     char marker[pattern_len + 1];   // keep track of possible markers of the specified length
     // initialize array to null
     for (int i = 0; i< pattern_len; i++) {
@@ -70,10 +70,10 @@ int find_marker(char* line, int pattern_len) {
 
 void main() {
     FILE *data;
-    assert(data != NULL);
     char line[INPUT_LEN];
     int packet_marker_offset, message_marker_offset;
     data = fopen("./input", "r");
+    assert(data != NULL);
     // file is composed of a single line
     fgets(line, INPUT_LEN, data);
     fclose(data);
