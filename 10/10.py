@@ -23,7 +23,6 @@ for cycle in clock.tick():
     crt.cycle(cpu.X)
     if cycle == 20 or (cycle - 20) % 40 == 0:
         signal_strengths.append(cycle * cpu.X)
-    print(cpu.X)
 
 print(f'Total strength = {sum(signal_strengths)}')
 print(f'part 2{str(crt)}')
