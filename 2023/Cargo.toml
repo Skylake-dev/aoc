@@ -1,0 +1,45 @@
+[package]
+name = "aoc2023"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "1"
+
+[[bin]]
+name = "2"
+
+[[bin]]
+name = "3"
+
+[[bin]]
+name = "4"
+
+[[bin]]
+name = "5"
+
+[[bin]]
+name = "6"
+
+[[bin]]
+name = "7"
+
+[[bin]]
+name = "8"
+
+[[bin]]
+name = "9"
+
+[[bin]]
+name = "10"
+
+[[bin]]
+name = "11"
+
+[[bin]]
+name = "15"
+
+[dependencies]
+regex = "1.10.2"
