@@ -1,5 +1,11 @@
-# Advent of Code 2022
+# Advent of Code Solution
 
-My solutions to the [Advent of Code](https://adventofcode.com) 2022.
+My solutions to the [Advent of Code](https://adventofcode.com).
 
-I plan on solving them using Python or sometimes C.
+These are my solutions to (some of) the advent of code challenges, organized
+by year. I may go back and complete the missing ones someday.
+
+The languages that i used are:
+- C
+- Python
+- Rust
