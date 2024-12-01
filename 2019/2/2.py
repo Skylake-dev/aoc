@@ -87,6 +87,7 @@ for noun in range(0, 100):
         computer.run()
         if computer.program[0] == target:
             solutions = (noun, verb)
+            found = True
             break
 
 print(f'part 2: {100 * solutions[0] + solutions[1]}')
