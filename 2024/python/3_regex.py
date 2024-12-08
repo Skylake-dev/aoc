@@ -1,7 +1,7 @@
 import re
 from functools import reduce
 
-with open('./input') as f:
+with open('../inputs/3.txt') as f:
     input = f.readlines()
 
 # join all lines

@@ -1,6 +1,6 @@
 import re
 
-with open('./input') as data:
+with open('../inputs/2.txt') as data:
     input = data.readlines()
 
 integer = r'[0-9]+'

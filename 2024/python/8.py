@@ -1,7 +1,7 @@
 from itertools import combinations
 from collections import namedtuple
 
-with open('./input') as data:
+with open('../inputs/8.txt') as data:
     input = data.readlines()
 
 ###############

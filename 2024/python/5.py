@@ -1,4 +1,4 @@
-with open('./input') as data:
+with open('../inputs/5.txt') as data:
     input = data.readlines()
 
 ###############

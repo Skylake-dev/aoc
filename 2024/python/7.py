@@ -2,7 +2,7 @@ from itertools import permutations
 from functools import reduce
 from time import time
 
-with open('./input') as data:
+with open('../inputs/7.txt') as data:
     input = data.readlines()
 
 ###############

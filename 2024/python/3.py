@@ -106,7 +106,7 @@ def parse(input_tape: Iterator[str]) -> None:
 
 def main() -> None:
     global result, do, active_do_and_dont
-    with open('./input') as f:
+    with open('../inputs/3.txt') as f:
         input = f.readlines()
     # join all lines
     s: str = ''.join(input)

@@ -1,6 +1,6 @@
 from typing import Callable, Iterable
 
-with open('./input') as data:
+with open('../inputs/4.txt') as data:
     lines: list[str] = data.readlines()
 
 # remove newlines

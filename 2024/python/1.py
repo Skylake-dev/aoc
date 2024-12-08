@@ -1,7 +1,7 @@
 import re
 from collections import Counter
 
-with open('./input') as data:
+with open('../inputs/1.txt') as data:
     input = data.readlines()
 
 numbers = r'([0-9]+)   ([0-9]+)'

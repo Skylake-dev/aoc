@@ -1,7 +1,7 @@
 from __future__ import annotations
 from time import time
 
-with open('./input') as data:
+with open('../inputs/6.txt') as data:
     input = data.readlines()
 
 ###############
