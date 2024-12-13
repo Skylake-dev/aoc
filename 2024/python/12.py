@@ -2,7 +2,7 @@ from time import time
 from collections import namedtuple
 from dataclasses import dataclass
 
-with open(r'C:\Users\capof\Documents\Progetti\aoc\2024\inputs\12.txt') as data:
+with open('../inputs/12.txt') as data:
     # with open('../inputs/12.txt') as data:
     input = data.readlines()
 
